@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">arbitragecalculator</string>
+    <string name="title">Arbitrage Betting Calculator</string>
+    <string name="BookMarker1">Book Marker 1</string>
+    <string name="BookMarker2">Book Marker 2</string>
+    <string name="enterOutcome1Odds">Enter Outcome 1 Odds</string>
+    <string name="enterOutcome2Odds">Enter Outcome 2 Odds</string>
+    <string name="CalculateButton">Calculate</string>
+    <string name="Outcome1">Outcome 1</string>
+    <string name="Outcome2">Outcome 2</string>
+    <string name="which_bookmarker_to_use_for_outcome_1">Which bookmarker to use for outcome 1:</string>
+    <string name="which_bookmarker_to_use_for_outcome_2">Which bookmarker to use for outcome 2:</string>
 </resources>
