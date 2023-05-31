@@ -93,10 +93,10 @@ public class ArbitrageCalculator extends AppCompatActivity {
         boolean foundArbitrage;
 
         try {
-            AOutcome1 = Integer.parseInt(AOutcome1Edit.getText().toString());
-            AOutcome2 = Integer.parseInt(AOutcome2Edit.getText().toString());
-            BOutcome1 = Integer.parseInt(BOutcome1Edit.getText().toString());
-            BOutcome2 = Integer.parseInt(BOutcome2Edit.getText().toString());
+            AOutcome1 = Double.parseDouble(AOutcome1Edit.getText().toString());
+            AOutcome2 = Double.parseDouble(AOutcome2Edit.getText().toString());
+            BOutcome1 = Double.parseDouble(BOutcome1Edit.getText().toString());
+            BOutcome2 = Double.parseDouble(BOutcome2Edit.getText().toString());
 
             foundArbitrage = calculateStuff(AOutcome1, AOutcome2, BOutcome1, BOutcome2);
 
