@@ -61,9 +61,9 @@
             android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:ems="10"
+            android:hint="@string/enterOutcome1Odds"
             android:inputType="number|numberDecimal"
-            android:padding="5dp"
-            android:text="@string/enterOutcome1Odds" />
+            android:padding="5dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -88,9 +88,9 @@
             android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:ems="10"
+            android:hint="@string/enterOutcome2Odds"
             android:inputType="number|numberDecimal"
-            android:padding="5dp"
-            android:text="@string/enterOutcome2Odds" />
+            android:padding="5dp" />
 
     </LinearLayout>
 
@@ -131,9 +131,10 @@
             android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:ems="10"
+            android:hint="@string/enterOutcome1Odds"
             android:inputType="number|numberDecimal"
             android:padding="5dp"
-            android:text="@string/enterOutcome1Odds" />
+            android:textIsSelectable="false" />
     </LinearLayout>
 
     <LinearLayout
@@ -158,9 +159,9 @@
             android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:ems="10"
+            android:hint="@string/enterOutcome2Odds"
             android:inputType="number|numberDecimal"
-            android:padding="5dp"
-            android:text="@string/enterOutcome2Odds" />
+            android:padding="5dp" />
 
     </LinearLayout>
 

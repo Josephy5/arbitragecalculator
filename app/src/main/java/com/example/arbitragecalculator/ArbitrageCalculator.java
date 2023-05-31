@@ -3,8 +3,10 @@ package com.example.arbitragecalculator;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,6 +19,8 @@ public class ArbitrageCalculator extends AppCompatActivity {
     double AOutcome1, AOutcome2, BOutcome1, BOutcome2;
 
     int BookMarkerOutcome1Index, BookMarkerOutcome2Index;
+
+    public boolean test;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,20 +37,25 @@ public class ArbitrageCalculator extends AppCompatActivity {
         BOutcome2Edit = findViewById(R.id.BOutcome2);
     }
 
-    private boolean calculateStuff(double AOutcome1, double AOutcome2, double BOutcome1, double BOutcome2) {
+    public boolean calculateStuff(double AOutcome1, double AOutcome2, double BOutcome1, double BOutcome2) {
         double[] allOutcome1 = {AOutcome1, BOutcome1};
         double[] allOutcome2 = {AOutcome2, BOutcome2};
 
         boolean result = false;
+        //Log.d("Test","Started");
         for (int x = 0; x < allOutcome1.length; x++) {
+            //Log.d("Test","Running");
             for (int y = 0; y < allOutcome1.length; y++) {
                 if (((1 / allOutcome1[x]) + (1 / allOutcome2[y])) < 1) {
+                    //Log.d("Test","Found");
                     result = true;
                     BookMarkerOutcome1Index = x;
                     BookMarkerOutcome2Index = y;
                 }
             }
         }
+        test=result;
+        //Log.d("Test","Finished");
         return result;
     }
 
